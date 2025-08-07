@@ -1,0 +1,44 @@
+{
+  "name": "easymoney-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix && prettier --write .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mayanfinance/wormhole-sdk-route": "^1.19.0",
+    "@mui/material": "^6.5.0",
+    "@mui/styled-engine": "^6.5.0",
+    "@mui/system": "^6.5.0",
+    "@wormhole-foundation/sdk": "^3.2.0",
+    "@wormhole-foundation/sdk-base": "^3.2.0",
+    "@wormhole-foundation/sdk-connect": "^3.2.0",
+    "@wormhole-foundation/sdk-evm": "^3.2.0",
+    "@wormhole-foundation/sdk-solana": "^3.2.0",
+    "@wormhole-foundation/sdk-sui": "^3.2.0",
+    "@wormhole-foundation/wormhole-connect": "^3.1.0",
+    "encoding": "^0.1.13",
+    "next": "15.4.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "terminal": "^0.1.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "prettier": "^3.6.2",
+    "typescript": "^5"
+  }
+}
