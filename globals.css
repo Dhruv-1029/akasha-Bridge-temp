@@ -492,6 +492,23 @@ body::before {
   overflow: visible !important;
 }
 
+/* Fix aria-hidden accessibility issues with Material-UI popovers */
+.wormhole-connect .MuiPopover-root[aria-hidden='true'] {
+  pointer-events: none;
+}
+
+.wormhole-connect .MuiPopover-root[aria-hidden='true'] * {
+  pointer-events: none;
+}
+
+/* Ensure proper focus management for hidden popovers */
+.wormhole-connect .MuiPopover-root[aria-hidden='true'] input,
+.wormhole-connect .MuiPopover-root[aria-hidden='true'] button,
+.wormhole-connect .MuiPopover-root[aria-hidden='true'] [tabindex] {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 /* Bridge error states */
 .bridge-error {
   display: flex;
@@ -871,5 +888,3 @@ body::before {
   padding: 0 !important;
   margin: 0 !important;
 }
-
-/* Wormhole Connect will use its default styling */

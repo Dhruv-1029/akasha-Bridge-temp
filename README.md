@@ -1,40 +1,35 @@
-# Easy Money Bridge
+Akasha Bridge (Wormhole Connect v3)
 
-A cross-chain bridge application built with Next.js, React, and Wormhole Connect v3.0.
+Production-ready Next.js app integrating Wormhole Connect v3 with your existing UI.
 
-## Environment Setup
+Setup
 
-1. Copy the environment example file:
+1. Copy env file:
 
-```bash
+```
 cp env.example .env.local
 ```
 
-2. Update the environment variables in `.env.local`:
+2. Fill in:
 
-- `NEXT_PUBLIC_WORMHOLE_NETWORK`: Set to 'mainnet', 'testnet', or 'devnet'
-- `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID`: Your WalletConnect project ID
-- `NODE_ENV`: Set to 'development' or 'production'
+- NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID
+- NEXT_PUBLIC_ALCHEMY_API_KEY
 
-## Getting Started
+3. Install and run:
 
-1. Install dependencies:
-
-```bash
-npm install
 ```
-
-2. Set up environment variables (see above)
-
-3. Run the development server:
-
-```bash
+npm i
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Build
 
-## Supported Chains
+```
+npm run build && npm start
+```
 
-- **EVM Chains**: Ethereum, BSC, Polygon, Avalanche, Arbitrum, Optimism, Base, Fantom
-- **Non-EVM Chains**: Solana, Sui, Aptos, Bera, Sei
+Notes
+
+- UI remains unchanged; only logic wiring for Wormhole v3 added.
+- RPCs are prefilled with Alchemy endpoints for multiple networks.
+- Assets are under public/images.
